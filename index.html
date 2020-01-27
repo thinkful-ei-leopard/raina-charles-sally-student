@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sally Resume</title>
+</head>
+<body>
+    <div id='application-root'>
+
+    </div>
+
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"> </script>
+    <script  type="text/babel">
+
+        // Our code will go here
+        // const helloWorldH1 = React.createElement('h1', null, 'Hello, world!');
+
+        function App() {
+            return (
+            <div>
+                <header>
+                    <h1>Sally Student</h1>
+                        <address>
+                            Email: <a href="mailto:sally@student.com">sally@student.com</a>
+                            Phone: <a href="+1234567899">(123) 456-7899</a>
+                        </address>
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="image of Sally"/>
+                </header> 
+                
+                <main>
+                    <section>
+                        <h2><u>Education</u></h2>
+                        <p><strong>Computer Science, BS</strong></p>
+                        <em>Virginia Tech, Graduated 2018, GPA: 3.9</em>
+                    </section>
+
+                   <section>
+                        <h2><u>Employment History</u></h2>
+                        <p><strong>Software Engineer</strong></p>
+                        <em>McLean Co. (Mar 2019 - Present)</em>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                        <p><strong>Software Developer</strong></p>
+                        <em>Fairfax Co. (May 2018 - Mar 2019)</em>
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+            );
+            };
+
+        ReactDOM.render(
+            <App />,
+            document.querySelector('#application-root')
+        );
+
+    </script>
+
+</body>
+</html>
